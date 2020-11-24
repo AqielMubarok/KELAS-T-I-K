@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
+ 	<meta charset="utf-8" />
+ 	<meta name="viewport" content="width=device-width,
+ 	initial-scale=1.0" />
 	<title>KELAS T I K</title>
-</head>
-<body>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
 
-</body>
+		$(function() {
+		    
+			$(".toogle").on("click", function(){
+
+				if($(".item").hasClass("active")){
+					$(".item").removeClass("active");
+				}
+				else {
+					$(".item").addClass("active");
+				}
+
+			})
+
+		});
+
+	</script>
+
+ </head>
+  <body>
+
+ 	<nav class="shadow">
+ 		<ul class="menu">
+	 		<li class="brand"><a href="">KELAS T I K</a></li>
+	 	  	<li class="item"><a href="">Untuk Guru</a></li>
+	 	  	<li class="item"><a href="">Untuk Siswa</a></li>
+	 	  	<li class="item"><a href="">Blog</a></li>
+	 	  	<li class="item"><a href="">Tentang Kita</a></li>
+	 	  	<li class="item button"><a href="">DAFTAR</a></li>
+	 	  	<li class="item button secondary"><a href="">MASUK</a></li>
+	 	  	<li class="toogle"><a href=""><span class="bars"></span></a></li>
+ 	  	</ul>
+ 	</nav>
+
+ 	<div>
+ 		<img class="prolog" src="prolog.png" height="500" width="670">
+ 		<img class="foto_tim" src="foto_tim.png" height="500" width="300">
+ 	</div>
+
+  </body>
 </html>
