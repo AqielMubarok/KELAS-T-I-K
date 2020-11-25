@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <link rel="stylesheet" 
+  href="https://fonts.googleapis.com/css?family=PT+Sans">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+
+		$(function() {
+
+			$(".toogle").on("click", function(){
+
+				if($(".item").hasClass("active")){
+					$(".item").removeClass("active");
+				}
+				else {
+					$(".item").addClass("active");
+				}
+
+			})
+
+		});
+
+	</script>
+
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav class="shadow">
+    <ul class="menu">
+      <li class="brand"><a href="">Kelas TIK</a></li>
+        <li class="item"><a href="">Untuk Guru</a></li>
+        <li class="item"><a href="">Untuk Siswa</a></li>
+        <li class="item"><a href="">Blog</a></li>
+        <li class="item"><a href="">Tentang Kita</a></li>
+        <li class="item button"><a href="">DAFTAR</a></li>
+        <li class="item button secondary"><a href="">MASUK</a></li>
+        <li class="toogle"><a href=""><span class="bars"></span></a></li>
+      </ul>
+  </nav>
+
+  <!-- section credit -->
+  <div class="credit">Powered By PSTI</div>
+  <div class="section-icon"></div>
+  <div class="container">
+    <div class="section-login">
+      <!-- section intro -->
+      <div class="section-intro">
+        <div class="login-text">Masuk</div>
+        <div class="text-end"></div>
+      </div>
+      <div class="text-intro">
+        <div class="text-welcome">Selamat Datang di Kelas TIK Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua</div>
+
+      </div>
+      
+      <!-- section form input -->
+      <div class="section-form">
+        <div class="mb-40">
+          <div class="label-input text">Masukkan nama user</div>
+          <input class="form-input-name" type="text" placeholder="Masukan nama">
+        </div>
+
+        <div class="mb-60">
+          <div class="label-input text">Masukkan kata sandi</div>
+          <input class="form-input-pw" type="password" placeholder="Masukan kata sandi">
+        </div>
+        <div class="label-forgot-password">
+          <div class="item"><a href="">Lupa Kata sandi?</a></div>
+        </div>
+
+        <!-- section button -->
+      <button class="btn-login">Login</button>
+  </div>
+  </div>
+</body>
+</html>
