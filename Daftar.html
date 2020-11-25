@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="utf-8" />
+ 	<meta name="viewport" content="width=device-width,
+ 	initial-scale=1.0" />
+	<title>KELAS T I K</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="daftar.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+
+		$(function() {
+		    
+			$(".toogle").on("click", function(){
+
+				if($(".item").hasClass("active")){
+					$(".item").removeClass("active");
+				}
+				else {
+					$(".item").addClass("active");
+				}
+
+			})
+
+		});
+
+	</script>
+
+ </head>
+  <body>
+
+ 	<nav class="shadow">
+ 		<ul class="menu">
+	 		<li class="brand"><a href="">KELAS T I K</a></li>
+	 	  	<li class="item"><a href="">Untuk Guru</a></li>
+	 	  	<li class="item"><a href="">Untuk Siswa</a></li>
+	 	  	<li class="item"><a href="">Blog</a></li>
+	 	  	<li class="item"><a href="">Tentang Kita</a></li>
+	 	  	<li class="item button"><a href="">DAFTAR</a></li>
+	 	  	<li class="item button secondary"><a href="">MASUK</a></li>
+	 	  	<li class="toogle"><a href=""><span class="bars"></span></a></li>
+ 	  	</ul>
+ 	</nav>
+
+ 	<div>
+ 		<img class="background" src="background.png" height="400" width="670">
+ 		<div class="section-daftar">
+ 		  <div class="login-text">Daftar</div>
+ 		  	<div class="section-form">
+          	  <div class="label-input-nama_lengkap">Nama Lengkap</div>
+          	  <input class="form-input-name" type="text" placeholder="Masukan nama">
+          	  <div class="label-input-username">Username</div>
+          	  <input class="form-input-name" type="text" placeholder="Masukan nama">
+          	  <div class="label-input-email">Email</div>
+          	  <input class="form-input-name" type="text" placeholder="Masukan nama">
+          	  <div class="label-input-password">Kata Sandi</div>
+          	  <input class="form-input-name" type="text" placeholder="Masukan nama">
+          	  <div class="label-input-confirm_password">Konfirmasi Kata Sandi</div>
+          	  <input class="form-input-name" type="text" placeholder="Masukan nama">
+        	</div>
+        	<button class="btn-login">Login</button>
+ 		  </div>	
+ 		</div>		
+ 	</div>
+
+  </body>
+</html>
